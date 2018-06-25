@@ -5,7 +5,9 @@ import com.fasterxml.jackson.annotation.JsonInclude
 import com.fasterxml.jackson.annotation.JsonProperty
 import java.net.URL
 
-
+/*
+DTO для получения картинок
+ */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 open class ResultsDTO(@JsonProperty("results")var results: List<ResultDTO>) {
